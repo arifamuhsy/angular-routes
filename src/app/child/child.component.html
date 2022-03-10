@@ -1,0 +1,7 @@
+<mat-checkbox
+  class="mat-option"
+  [checked]="model.value.length === values.length"
+  (change)="toggleSelection($event)"
+>
+  {{ text }}
+</mat-checkbox>

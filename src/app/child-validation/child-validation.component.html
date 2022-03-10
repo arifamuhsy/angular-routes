@@ -1,0 +1,12 @@
+<div [formGroup]="form_select_all">
+    <mat-form-field class="full-width">
+      <mat-select placeholder="Hobi" formControlName="project" multiple>
+        <app-child [model]="form_select_all.get('project')" [values]="projects">
+        </app-child>
+  
+        <mat-option *ngFor="let project of projects" [value]="project">{{
+          project.hobi
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
